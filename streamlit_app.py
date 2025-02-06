@@ -20,7 +20,7 @@ def connect_to_gsheets():
 
 
 def load_data():
-    ssl._create_default_https_context = ssl._create_unverified_context
+    #ssl._create_default_https_context = ssl._create_unverified_context
     """Google Drive에서 Excel 파일을 로드하여 DataFrame으로 변환"""
     sheet_id = "141c46fbsLvfVt_F4jf0Eqv5PCsUM4nikrgKpjsZpLUY"
     script_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=tsv&gid=0"
