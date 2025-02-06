@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
-import ssl
+#import ssl
 import gspread
 from google.oauth2.service_account import Credentials
 
-ssl._create_default_https_context = ssl._create_unverified_context
+#ssl._create_default_https_context = ssl._create_unverified_context
 # ======= Google Drive에서 데이터 로드 =======
 @st.cache_data
 #@retry(stop_max_attempt_number=3, wait_fixed=2000)
