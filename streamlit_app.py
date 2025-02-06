@@ -92,7 +92,8 @@ if not st.session_state["username"]:
             st.error("Invalid username or password.")
 else:
     def main():
-        st.title("📘 Re-Naldae with ddulbi")
+        #st.title("📘 Re-Naldae with ddulbi")
+        st.title("📘 English tutoring service")
         st.sidebar.title(f"Welcome, {st.session_state['username']}")
         menu = st.sidebar.selectbox("Choose an option", ["📖 주차별 스크립트", "🔑 Key Phrases 학습", "✍️ 작문 연습", "🎯 퀴즈", "🚪 로그아웃"])
         
